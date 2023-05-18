@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <!-- navbar-->
+
+        <nav class="navbar navbar-expand-lg  bg-full-nav" id="full-nav" >
+          <div class="container-fluid">
+            <a class="navbar-brand text-danger fw-bold" href="#">VIDYA</a>
+            <button class="navbar-toggler" onclick="toggleClicked();" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+              <span class=" "><i class="fa-solid fa-bars text-danger fw-bold"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+              <form class="d-flex ms-auto me-auto">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn  search" type="submit">Search</button>
+                </form>
+              <ul class="navbar-nav me-auto ms-auto my-2 my-lg-0 " style="--bs-scroll-height: 100px;">
+                <li class="nav-item">
+                  <a class="nav-link text-danger   active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-danger " href="#">About Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link text-danger  dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Courses
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">MBA</a></li>
+                    <li><a class="dropdown-item" href="#">BBA</a></li>
+                    <li><a class="dropdown-item" href="#">Medical</a></li>
+                    <li><a class="dropdown-item" href="#">Engineering</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-danger  " href="#" tabindex="-1" aria-disabled="true">Contact Us</a>
+                </li>
+              </ul>
+              
+            </div>
+          </div>
+        </nav>
+    <!-- Carousel -->
+
+    <div id="carouselExampleControlsNoTouching" class="carousel slide pt-4" data-bs-touch="false" data-bs-interval="false">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/clg2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption">
+                <h1>Start Your College Discovery</h1>
+                <button class="btn btn-danger">Explore</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/camp2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption">
+                <h1>Addmission Started</h1>
+                <button class="btn btn-danger">Explore</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/camp3.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption">
+                <h1>Start Your College Discovery</h1>
+                <button class="btn btn-danger">Explore</button>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+
+      <!-- -->
+
+      <section class="contents">
+        <div class="first-stn">
+            <div>
+                <i class="fa-solid fa-magnifying-glass fa-3x text-danger"></i>
+                <a href="">Find Colleges</a>
+            </div>
+            <div>
+                <i class="fa-regular fa-address-card fa-3x text-danger"></i>
+                <a href="">Get Admission</a>
+            </div>
+            <div>
+                <i class="fa-sharp fa-regular fa-clipboard fa-3x text-danger"></i>
+                <a href="">Explore Exams</a>
+            </div>
+            <div>
+                <i class="fa-regular fa-newspaper fa-3x text-danger"></i>
+                <a href="">Latest News</a>
+            </div>
+            <div>
+                <i class="fa fa-sharp fa-pen-nib fa-3x text-danger"></i>
+                <a href="">Write a Review</a>
+            </div>
+        </div>
+      </section>
+
+      <section class="welcome-section  pt-5 pb-5">
+        <div class="container">
+          <div>
+            <h2 >Welcome To Vidya Of <br> Successfull Careeer</h2>
+            <p>
+               The VIDYA of consultancy, started in 2009, is one of the renowned private carrer object in India.
+               The college offers a range of courses approved by AICTE and affiliated to Anna University. 
+               Study World College of Engineering is a part of Study World Education Holding Group.
+            </p>
+          </div>
+          <div class="d-grid " style="grid-template-columns: 1fr 1fr; gap: 15px;">
+            <div class="card" >
+                <div class="card-body">
+                  <h4 class="card-title text-dark">Education</h4>
+                  <p class="card-text">
+                    Education is the key to create a sophisticated modern world as it 
+                    involves the practical application of science to design
+                  </p>
+
+                </div>
+            </div>
+            <div class="card" >
+              <div class="card-body">
+                <h4 class="card-title text-dark">Campus Life</h4>
+                <p class="card-text">
+                  today’s competitive world, a proactive learning style and infinite capability for 
+                  innovation form the cornerstone of successful organizations
+                </p>
+
+              </div>
+            </div>
+            <div class="card" >
+              <div class="card-body">
+                <h4 class="card-title text-dark">Laboratory</h4>
+                <p class="card-text">
+                  We have a well-equipped library with sufficient volumes of books,
+                   periodicals and journals covering Science, Engineering
+                </p>
+
+              </div>
+            </div>
+            <div class="card" >
+              <div class="card-body">
+                <h4 class="card-title text-dark">Research</h4>
+                <p class="card-text">
+                   department of physical education concentrates both
+                   indoor and outdoor games. The department is headed
+                </p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          
+        </div>
+      </section>
+
+      <!-- What's happening -->
+
+      <section class="what-happening pt-4 ">
+        <h2 class="text-center">What's happening</h2>
+        <div class="container mt-4 ">
+          <div class="owl-carousel owl-2 owl-theme" >
+            <div class="item" >
+              <div class="card" >
+                <div>
+                      <img class="card-img-top" src="images/counselling.jpg">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-dark"> COUNSELLING</h5>
+                  <p class="card-text">Free educational counselling to students and parents regarding all courses.</p>
+
+                </div>
+           </div>
+            </div>
+            <div class="item">
+              <div class="card" >
+                <img class="card-img-top" src="images/clg2.jpg">
+                <div class="card-body">
+                  <h5 class="card-title text-dark">INSTITUTES</h5>
+                  <p class="card-text">We guide and prefer recognized and well-known institutions only.</p>
+
+                </div>
+           </div>
+            </div>
+            <div class="item">
+              <div class="card" >
+                <img class="card-img-top" src="images/admission.jpg">
+                <div class="card-body">
+                  <h5 class="card-title text-dark">ADMISSION PROCESS</h5>
+                  <p class="card-text">Analyzing and sorting out application requirements for admission process.</p>
+
+                </div>
+           </div>
+            </div>
+            <div class="item">
+              <div class="card" >
+                <img class="card-img-top" height="240px" src="images/careeer.png">
+                <div class="card-body">
+                  <h5 class="card-title text-dark">CAREER COUNSELLING</h5>
+                  <p class="card-text">One to one career counselling, choosing & selecting courses, colleges & universities.
+                  
+                  </p>
+
+                </div>
+           </div>
+            </div>
+            <div class="item">
+              <div class="card" >
+                <img class="card-img-top" src="images/guidence.jpg">
+                <div class="card-body">
+                  <h5 class="card-title text-dark">SPECIAL GUIDANCE</h5>
+                  <p class="card-text">Special guidance is given to overseas students joining colleges and universities in India and other countries.</p>
+
+                </div>
+           </div>
+            </div>
+            <div class="item">
+              <div class="card" >
+                <img class="card-img-top" src="images/scholarship.jpg">
+                <div class="card-body">
+                  <h5 class="card-title text-dark">SCHOLARSHIP</h5>
+                  <p class="card-text">We offer Scholarship those who are taking admission through Study World</p>
+
+                </div>
+           </div>
+            </div>
+
+            
+        </div>
+        </div>
+        
+      </section>
+      <section class="information-catogery pt-5">
+        <h2 class="text-center">Find Information by Category</h2>
+        <div class="container pt-4 text-center">
+          
+            <div class="btns" >
+              <button class="btn-1" id="btn-1" onclick="btn_1()">Colleges</button>
+              <button class="btn-2" id="btn-2" onclick="btn_2()" >Exams</button>
+              <button class="btn-3" id="btn-3" onclick="btn_3()" >Courses</button>
+              <button class="btn-4" id="btn-4" onclick="btn_4()" >Locations</button>
+            </div>
+          
+      <div class="categorie-college pt-4 categories" id="categorie-clg">
+            <div class="card"  >
+                <i class="fa-solid fa-gear fa-3x text-center text-danger"></i>
+                <div class="card-body">
+                  <h6 class="card-title text-dark">Engineering</h6>
+                  <p class="card-text">3021 Colleges</p>
+                </div>
+           </div>
+           <div class="card"  >
+              <i class="fa-solid fa-chart-column fa-3x text-center text-danger"></i>
+              <div class="card-body">
+                <h6 class="card-title text-dark">Management</h6>
+                <p class="card-text">3727 Colleges</p>
+              </div>
+           </div>
+         <div class="card"  >
+            <i class="fa-solid fa-suitcase-medical fa-3x text-center text-danger"></i>
+            <div class="card-body">
+              <h6 class="card-title text-dark">Medical</h6>
+              <p class="card-text">369 Colleges</p>
+            </div>
+         </div>
+         <div class="card"  >
+            <i class="fa-solid fa-video fa-3x text-center text-danger"></i>
+            <div class="card-body">
+              <h6 class="card-title text-dark">Mass Communication</h6>
+              <p class="card-text">139 Colleges</p>
+            </div>
+         </div>
+         <div class="card"  >
+              <i class="fa-solid fa-spray-can fa-3x text-center text-danger"></i>
+              <div class="card-body">
+                <h6 class="card-title text-dark">Design</h6>
+                <p class="card-text">142 Colleges</p>
+              </div>
+          </div>
+          <div class="card"  >
+              <i class="fa-solid fa-gavel fa-3x text-center text-danger"></i>
+              <div class="card-body">
+                <h6 class="card-title text-dark">Law</h6>
+                <p class="card-text">889 Colleges</p>
+              </div>
+          </div>
+          <div class="card"  >
+              <i class="fa-solid fa-regular fa-city fa-3x text-center text-danger"></i>
+              <div class="card-body">
+                <h6 class="card-title text-dark">Architecture</h6>
+                <p class="card-text">388 Colleges</p>
+              </div>
+        </div>
+        <div class="card"  >
+            <i class="fa-solid fa-computer fa-3x text-center text-danger"></i>
+            <div class="card-body">
+              <h6 class="card-title text-dark">Computers</h6>
+              <p class="card-text">1985 Colleges</p>
+            </div>
+        </div>
+        <div class="card"  >
+          <i class="fa-solid fa-paintbrush fa-3x text-center text-danger"></i>
+          <div class="card-body">
+            <h6 class="card-title text-dark">Art & Humanities</h6>
+            <p class="card-text">2245 Colleges</p>
+          </div>
+        </div>
+        <div class="card"  >
+            <i class="fa-solid fa-cash-register fa-3x text-center text-danger"></i>
+            <div class="card-body">
+              <h6 class="card-title text-dark">Commerce</h6>
+              <p class="card-text">2351 Colleges</p>
+            </div>
+        </div>
+        <div class="card"  >
+            <i class="fa-solid fa-flask fa-3x text-center text-danger"></i>
+            <div class="card-body">
+              <h6 class="card-title text-dark">Sceience</h6>
+              <p class="card-text">2416 Colleges</p>
+            </div>
+        </div>
+        <div class="card">
+            <i class="fa-solid fa-bell-concierge fa-3x text-center text-danger"></i>
+            <div class="card-body">
+              <h6 class="card-title text-dark">Hotel Management</h6>
+              <p class="card-text">17 Colleges</p>
+            </div>
+        </div>
+      </div>
+    <div class="categorie-Exams categories pt-4" id="categorie-exm">
+        <div class="card">
+          <i class="fa-solid fa-gear fa-3x text-center text-danger"></i>
+          <div class="card-body">
+            <h6 class="card-title text-dark">Engineering</h6>
+            <p class="card-text">71 Exams</p>
+          </div>
+        </div>
+        <div class="card">
+            <i class="fa-solid fa-chart-column fa-3x text-center text-danger"></i>
+            <div class="card-body">
+              <h6 class="card-title text-dark">Management</h6>
+              <p class="card-text">69 Exams</p>
+            </div>
+        </div>
+        <div class="card">
+            <i class="fa-solid fa-suitcase-medical fa-3x text-center text-danger"></i>
+            <div class="card-body">
+              <h6 class="card-title text-dark">Medical</h6>
+              <p class="card-text">25 Exams</p>
+            </div>
+        </div>
+        <div class="card">
+            <i class="fa-solid fa-video fa-3x text-center text-danger"></i>
+            <div class="card-body">
+              <h6 class="card-title text-dark">Mass Communication</h6>
+              <p class="card-text">2 Exams</p>
+            </div>
+        </div>
+        <div class="card"  >
+              <i class="fa-solid fa-spray-can fa-3x text-center text-danger"></i>
+              <div class="card-body">
+                <h6 class="card-title text-dark">Design</h6>
+                <p class="card-text">4 Exams</p>
+              </div>
+          </div>
+          <div class="card">
+              <i class="fa-solid fa-gavel fa-3x text-center text-danger"></i>
+              <div class="card-body">
+                <h6 class="card-title text-dark">Law</h6>
+                <p class="card-text">8 Exams</p>
+              </div>
+          </div>
+          <div class="card">
+              <i class="fa-solid fa-regular fa-city fa-3x text-center text-danger"></i>
+              <div class="card-body">
+                <h6 class="card-title text-dark">Architecture</h6>
+                <p class="card-text">5 Exams</p>
+              </div>
+          </div>
+          <div class="card">
+              <i class="fa-solid fa-computer fa-3x text-center text-danger"></i>
+              <div class="card-body">
+                <h6 class="card-title text-dark">Computers</h6>
+                <p class="card-text">16 Exams</p>
+              </div>
+          </div>
+          <div class="card">
+            <i class="fa-solid fa-paintbrush fa-3x text-center text-danger"></i>
+            <div class="card-body">
+              <h6 class="card-title text-dark">Art & Humanities</h6>
+              <p class="card-text">1 Exams</p>
+            </div>
+          </div>
+          <div class="card"  >
+              <i class="fa-solid fa-cash-register fa-3x text-center text-danger"></i>
+              <div class="card-body">
+                <h6 class="card-title text-dark">Commerce</h6>
+                <p class="card-text">3 Exams</p>
+              </div>
+          </div>
+          <div class="card"  >
+              <i class="fa-solid fa-flask fa-3x text-center text-danger"></i>
+              <div class="card-body">
+                <h6 class="card-title text-dark">Sceience</h6>
+                <p class="card-text">3 Exams</p>
+              </div>
+          </div>
+          <div class="card"  >
+              <i class="fa-solid fa-bell-concierge fa-3x text-center text-secondary"></i>
+              <div class="card-body">
+                <h6 class="card-title text-dark">Hotel Management</h6>
+                <p class="card-text">0 Exams</p>
+              </div>
+          </div>
+     </div>
+     <div class="categorie-Courses categories pt-4" id="categorie-crs"> 
+            <div class="card"  >
+                <i class="fa-solid fa-gear fa-3x text-center text-danger"></i>
+                <div class="card-body">
+                  <h6 class="card-title text-dark">Engineering</h6>
+                  <p class="card-text">278 Branches</p>
+                </div>
+           </div>
+           <div class="card"  >
+              <i class="fa-solid fa-chart-column fa-3x text-center text-danger"></i>
+              <div class="card-body">
+                <h6 class="card-title text-dark">Management</h6>
+                <p class="card-text">293 Branches</p>
+              </div>
+           </div>
+         <div class="card"  >
+            <i class="fa-solid fa-suitcase-medical fa-3x text-center text-secondary"></i>
+            <div class="card-body">
+              <h6 class="card-title text-dark">Medical</h6>
+              <p class="card-text">0 Branches</p>
+            </div>
+        </div>
+        <div class="card"  >
+          <i class="fa-solid fa-video fa-3x text-center text-danger"></i>
+          <div class="card-body">
+            <h6 class="card-title text-dark">Mass Communication</h6>
+            <p class="card-text">5 Branches</p>
+          </div>
+        </div>
+        <div class="card"  >
+          <i class="fa-solid fa-spray-can fa-3x text-center text-danger"></i>
+          <div class="card-body">
+            <h6 class="card-title text-dark">Design</h6>
+            <p class="card-text">17 Branches</p>
+          </div>
+        </div>
+        <div class="card"  >
+          <i class="fa-solid fa-gavel fa-3x text-center text-danger"></i>
+          <div class="card-body">
+            <h6 class="card-title text-dark">Law</h6>
+            <p class="card-text">5 Branches</p>
+          </div>
+        </div>
+        <div class="card"  >
+          <i class="fa-solid fa-regular fa-city fa-3x text-center text-danger"></i>
+          <div class="card-body">
+            <h6 class="card-title text-dark">Architecture</h6>
+            <p class="card-text">16 Branches</p>
+          </div>
+        </div>
+        <div class="card"  >
+          <i class="fa-solid fa-computer fa-3x text-center text-danger"></i>
+          <div class="card-body">
+            <h6 class="card-title text-dark">Computers</h6>
+            <p class="card-text">4 Branches</p>
+          </div>
+        </div>
+        <div class="card"  >
+          <i class="fa-solid fa-paintbrush fa-3x text-center text-danger"></i>
+          <div class="card-body">
+            <h6 class="card-title text-dark">Art & Humanities</h6>
+            <p class="card-text">167 Branches</p>
+          </div>
+        </div>
+        <div class="card"  >
+          <i class="fa-solid fa-cash-register fa-3x text-center text-danger"></i>
+          <div class="card-body">
+            <h6 class="card-title text-dark">Commerce</h6>
+            <p class="card-text">52 Branches</p>
+          </div>
+        </div>
+        <div class="card"  >
+          <i class="fa-solid fa-flask fa-3x text-center text-danger"></i>
+          <div class="card-body">
+            <h6 class="card-title text-dark">Sceience</h6>
+            <p class="card-text">286 Branches</p>
+          </div>
+        </div>
+        <div class="card"  >
+          <i class="fa-solid fa-bell-concierge fa-3x text-center text-secondary"></i>
+          <div class="card-body">
+            <h6 class="card-title text-dark">Hotel Management</h6>
+            <p class="card-text">0 Branches</p>
+          </div>
+        </div>
+     </div>
+    <div class="categorie-Locations categories pt-4" id="categorie-lctn">
+            <div class="card"  >
+                <i class="fa-solid fa-gear fa-3x text-center text-danger"></i>
+                <div class="card-body">
+                  <h6 class="card-title text-dark">Engineering</h6>
+                  <p class="card-text">227 Cities</p>
+                </div>
+           </div>
+           <div class="card"  >
+              <i class="fa-solid fa-chart-column fa-3x text-center text-danger"></i>
+              <div class="card-body">
+                <h6 class="card-title text-dark">Management</h6>
+                <p class="card-text">214 Cities</p>
+              </div>
+         </div>
+         <div class="card"  >
+            <i class="fa-solid fa-suitcase-medical fa-3x text-center text-danger"></i>
+            <div class="card-body">
+              <h6 class="card-title text-dark">Medical</h6>
+              <p class="card-text">146 Cities</p>
+            </div>
+        </div>
+        <div class="card"  >
+            <i class="fa-solid fa-video fa-3x text-center text-danger"></i>
+            <div class="card-body">
+              <h6 class="card-title text-dark">Mass Communication</h6>
+              <p class="card-text">31 Cities</p>
+            </div>
+        </div>
+        <div class="card"  >
+            <i class="fa-solid fa-spray-can fa-3x text-center text-danger"></i>
+            <div class="card-body">
+              <h6 class="card-title text-dark">Design</h6>
+              <p class="card-text">49 Cities</p>
+            </div>
+        </div>
+        <div class="card"  >
+          <i class="fa-solid fa-gavel fa-3x text-center text-danger"></i>
+          <div class="card-body">
+            <h6 class="card-title text-dark">Law</h6>
+            <p class="card-text">172 Cities</p>
+          </div>
+        </div>
+        <div class="card"  >
+            <i class="fa-solid fa-regular fa-city fa-3x text-center text-danger"></i>
+            <div class="card-body">
+              <h6 class="card-title text-dark">Architecture</h6>
+              <p class="card-text">117 Cities</p>
+          </div>
+        </div>
+            <div class="card"  >
+                <i class="fa-solid fa-computer fa-3x text-center text-danger"></i>
+                <div class="card-body">
+                  <h6 class="card-title text-dark">Computers</h6>
+                  <p class="card-text">191 Cities</p>
+                </div>
+          </div>
+          <div class="card"  >
+              <i class="fa-solid fa-paintbrush fa-3x text-center text-danger"></i>
+              <div class="card-body">
+                <h6 class="card-title text-dark">Art & Humanities</h6>
+                <p class="card-text">185 Cities</p>
+              </div>
+          </div>
+          <div class="card"  >
+              <i class="fa-solid fa-cash-register fa-3x text-center text-danger"></i>
+              <div class="card-body">
+                <h6 class="card-title text-dark">Commerce</h6>
+                <p class="card-text">188 Cities</p>
+              </div>
+          </div>
+          <div class="card"  >
+              <i class="fa-solid fa-flask fa-3x text-center text-danger"></i>
+              <div class="card-body">
+                <h6 class="card-title text-dark">Sceience</h6>
+                <p class="card-text">195 Cities</p>
+              </div>
+          </div>
+          <div class="card"  >
+              <i class="fa-solid fa-bell-concierge fa-3x text-center text-danger"></i>
+              <div class="card-body">
+                <h6 class="card-title text-dark">Hotel Management</h6>
+                <p class="card-text">12 Cities</p>
+              </div>
+          </div>
+      </div>
+ </div>
+      </section>
+      <section class="popular-srch pt-4 pb-5">
+        <h2 class="text-center fw-bold ">Popular Searches</h2>
+        <div class="container pt-4">
+          <div>
+              <h4 class=" pb-2"><i class="fa-solid fa-users"></i>MBA</h4>
+               <div class="d-flex justify-content-center align-items-center" >
+                    <div>
+                      <h5 class="text-justify">searches</h5>
+                    <p class="text-justify"><a href="">MBA Colleges in India</a></p>
+                    <p class="text-justify"><a href="">MBA Colleges in Mumbai</a></p>
+                    <p class="text-justify"><a href="">MBA Colleges in Pune</a></p>
+                    <p class="text-justify"><a href="">MBA Colleges in Ahmedabad</a></p>
+                    <p class="text-justify"><a href="">MBA Colleges in Bangalore</a></p>
+                    </div>
+               </div>
+          </div>
+          <div>
+              <h4 class=" pb-2"><i class="fa-solid fa-gear "></i>Engineering</h4>
+              <div class="d-flex justify-content-center align-items-center">
+                <div>
+                  <h5 class="textjustifycenter">searches</h5>
+                  <p class="text-justify"><a href="">Engineering Colleges in India</a></p>
+                  <p class="text-justify"><a href="">Engineering Colleges in Delhi</a></p>
+                  <p class="text-justify"><a href="">Engineering Colleges in Rajasthan</a></p>
+                  <p class="text-justify"><a href="">Engineering Colleges in Jaipur</a></p>
+                  <p class="text-justify"><a href="">Engineering Colleges in West Bengal</a></p>
+                </div>
+              </div>
+              
+          </div>
+          <div>
+              <h4 class=" pb-2"><i class="fa-solid fa-plus"></i>Medical</h4>
+              <div class="d-flex justify-content-center align-items-center" >
+                <div>
+                  <h5 class="text-justify">searches</h5>
+                  <p class="text-justify"><a href="">Medical Colleges in India</a></p>
+                  <p class="text-justify"><a href="">Medical Colleges in Bangalore</a></p>
+                  <p class="text-justify"><a href="">Medical Colleges in Mumbai</a></p>
+                  <p class="text-justify"><a href="">Medical Colleges in Karnataka</a></p>
+                  <p class="text-justify"><a href="">Medical Colleges in Maharashtra</a></p>
+                </div>
+              </div>
+              
+          </div>
+          <div>
+            <h4 class=" pb-2"><i class="fa-solid fa-users"></i>BBA</h4>
+            <div class="d-flex justify-content-center align-items-center">
+                <div>
+                  <h5 class="text-justify">searches</h5>
+                  <p class="text-justify"><a href="">BBA Colleges in India</a></p>
+                  <p class="text-justify"><a href="">BBA Colleges in Delhi</a></p>
+                  <p class="text-justify"><a href="">BBA Colleges in Mumbai</a></p>
+                  <p class="text-justify"><a href="">BBA Colleges in Kolkata</a></p>
+                  <p class="text-justify"><a href="">BBA Colleges in Pune</a></p>
+                </div>
+            </div>
+          </div>
+          <div>
+            <h4 class=" pb-2"><i class="fa-solid fa-users"></i>Architecture</h4>
+            <div class="d-flex justify-content-center align-items-center">
+                <div>
+                  <h5 class="text-justify">searches</h5>
+                  <p class="text-justify"><a href="">BBA Colleges in India</a></p>
+                  <p class="text-justify"><a href="">BBA Colleges in Delhi</a></p>
+                  <p class="text-justify"><a href="">BBA Colleges in Mumbai</a></p>
+                  <p class="text-justify"><a href="">BBA Colleges in Kolkata</a></p>
+                  <p class="text-justify"><a href="">BBA Colleges in Pune</a></p>
+                </div>
+            </div>
+          </div>
+          <div>
+            <h4 class=" pb-2"><i class="fa-solid fa-gavel "></i>LAW</h4>
+            <div class="d-flex justify-content-center align-items-center">
+                <div>
+                  <h5 class="text-justify">searches</h5>
+                  <p class="text-justify"><a href="">BBA Colleges in India</a></p>
+                  <p class="text-justify"><a href="">BBA Colleges in Delhi</a></p>
+                  <p class="text-justify"><a href="">BBA Colleges in Mumbai</a></p>
+                  <p class="text-justify"><a href="">BBA Colleges in Kolkata</a></p>
+                  <p class="text-justify"><a href="">BBA Colleges in Pune</a></p>
+                </div>
+            </div>
+          </div>
+          <div>
+            <h4 class=" pb-2"><i class="fa-solid fa-bell-concierge"></i>Hotel Management</h4>
+            <div class="d-flex justify-content-center align-items-center">
+                <div>
+                  <h5 class="text-justify">searches</h5>
+                  <p class="text-justify"><a href="">BBA Colleges in India</a></p>
+                  <p class="text-justify"><a href="">BBA Colleges in Delhi</a></p>
+                  <p class="text-justify"><a href="">BBA Colleges in Mumbai</a></p>
+                  <p class="text-justify"><a href="">BBA Colleges in Kolkata</a></p>
+                  <p class="text-justify"><a href="">BBA Colleges in Pune</a></p>
+                </div>
+            </div>
+          </div>
+          <div>
+            <h4 class="pb-2"><i class="fa-solid fa-users"></i>MCA</h4>
+            <div class="d-flex justify-content-center align-items-center">
+                <div>
+                  <h5 class="text-justify">searches</h5>
+                  <p class="text-justify"><a href="">BBA Colleges in India</a></p>
+                  <p class="text-justify"><a href="">BBA Colleges in Delhi</a></p>
+                  <p class="text-justify"><a href="">BBA Colleges in Mumbai</a></p>
+                  <p class="text-justify"><a href="">BBA Colleges in Kolkata</a></p>
+                  <p class="text-justify"><a href="">BBA Colleges in Pune</a></p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="container">
+             <h6 class="text-center">Copyright &#64;2023 Vidya.in All rights reserved</h6>
+             <p class="text-center">Reproduction in whole or in any form without express written permission is prohibited.</p>
+        </div>
+      </footer>
+
+      <script>
+        function btn_1(){
+          document.getElementById('categorie-clg').style.display='grid';
+          document.getElementById('categorie-exm').style.display='none';
+          document.getElementById('categorie-crs').style.display='none';
+          document.getElementById('categorie-lctn').style.display='none';
+          document.getElementById('btn-1').style.backgroundColor='orange';
+          document.getElementById('btn-2').style.backgroundColor='rgb(252, 250, 250)';
+          document.getElementById('btn-3').style.backgroundColor='rgb(252, 250, 250)';
+          document.getElementById('btn-4').style.backgroundColor='rgb(252, 250, 250)';
+        }
+        function btn_2(){
+          document.getElementById('categorie-clg').style.display='none';
+          document.getElementById('categorie-exm').style.display='grid';
+          document.getElementById('categorie-crs').style.display='none';
+          document.getElementById('categorie-lctn').style.display='none';
+          document.getElementById('btn-1').style.backgroundColor='rgb(252, 250, 250)';
+          document.getElementById('btn-2').style.backgroundColor='orange';
+          document.getElementById('btn-3').style.backgroundColor='rgb(252, 250, 250)';
+          document.getElementById('btn-4').style.backgroundColor='rgb(252, 250, 250)';
+        }
+        function btn_3(){
+          document.getElementById('categorie-clg').style.display='none';
+          document.getElementById('categorie-exm').style.display='none';
+          document.getElementById('categorie-crs').style.display='grid';
+          document.getElementById('categorie-lctn').style.display='none';
+          document.getElementById('btn-1').style.backgroundColor='rgb(252, 250, 250)';
+          document.getElementById('btn-2').style.backgroundColor='rgb(252, 250, 250)';
+          document.getElementById('btn-3').style.backgroundColor='orange';
+          document.getElementById('btn-4').style.backgroundColor='rgb(252, 250, 250)';
+        }
+        function btn_4(){
+          document.getElementById('categorie-clg').style.display='none';
+          document.getElementById('categorie-exm').style.display='none';
+          document.getElementById('categorie-crs').style.display='none';
+          document.getElementById('categorie-lctn').style.display='grid';
+          document.getElementById('btn-1').style.backgroundColor='rgb(252, 250, 250)';
+          document.getElementById('btn-2').style.backgroundColor='rgb(252, 250, 250)';
+          document.getElementById('btn-3').style.backgroundColor='rgb(252, 250, 250)';
+          document.getElementById('btn-4').style.backgroundColor='orange';
+        }
+      </script>
+
+<script
+src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+crossorigin="anonymous"
+referrerpolicy="no-referrer"
+></script>
+<script
+src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+crossorigin="anonymous"
+referrerpolicy="no-referrer"
+></script>
+
+<!-- initialisation of owl carousel-->
+<script type="text/javascript">
+
+
+$(".owl-2").owlCarousel({
+        loop: true,
+        margin: 5,
+        nav: true,
+        autoplay: false,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          800: {
+            items: 2,
+          },
+          1000:{
+            items: 3,
+          },
+          1500: {
+            items: 4,
+          },
+        },
+      });
+</script>
+      <script src="https://kit.fontawesome.com/d53d2b527f.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+</body>
+</html>
